@@ -1,0 +1,42 @@
+.grid {
+  //width: 900px;
+  padding-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  
+  .grid-item {
+    display: flex;
+    flex-direction: row;
+    //border:1px solid red;
+
+    .column {
+      flex: 33.33%;
+      padding: 30px;
+       //border:1px solid blue;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        height: 300px;
+        width:100%;
+      }
+      p {
+        .num {
+          text-decoration: line-through;
+          padding-right: 10px;
+          color: gray;
+        }
+      }
+    }
+  }
+}
+@media print {
+  .grid {
+    .grid-item {
+      display: flex;
+      flex-direction: column;
+      img {
+        display: none;
+      }
+    }
+  }
+}

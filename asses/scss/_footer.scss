@@ -1,0 +1,20 @@
+.footer{
+    bottom: 0;
+    //width: 900px;
+    height:100px;
+    margin-left: 30px;
+    margin-right: 20px;    
+    background: LightGrey ;
+    padding: 10px 0;
+    color: black;
+}
+.container{
+   padding-top: 80px;
+   padding-left: 10px;
+    bottom: 0px; 
+}
+@media print {
+    .footer {
+    display: none;
+}
+}

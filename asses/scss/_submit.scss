@@ -1,0 +1,45 @@
+.submit {
+  //width: 900px;
+  display: block;
+  margin-left: 35px;
+  margin-right: auto;
+  .submit-item {
+    display: flex;
+    flex-direction: row;
+    //border: 1px solid red;
+
+    .col {
+      flex: 33.33%;
+      padding: 30px;
+      justify-content: space-between;
+
+      .required label:after {
+        content: " *";
+        color: red;
+       
+        }
+    }
+      h2{
+        //-size: 30px;
+        
+        color: #006633;
+      }
+      img {
+        height: 200px;
+        width: 600px;
+      }
+      form {
+        font-size: 20px;
+        #error-message {
+          font-size: 15px;
+          color: red;
+
+      }
+    }
+  }
+}
+@media print{
+  .submit {
+    display: none;
+  }
+}
